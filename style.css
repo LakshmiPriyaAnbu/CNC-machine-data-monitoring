@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=open+sans&display=swap');
+body {
+    font-family: 'open sans', sans-serif;
+    background: #2c3e50;
+
+    
+}
+
+nav{
+    position: relative;
+    top: 1px;
+    margin: 10px auto 0;
+    width: 250px;
+    height: 50px;
+    background:   #1abc9c;
+    border-radius: 8px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+
+nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align:center;
+    
+}
+
+nav .animation{
+    position: absolute;
+    height: 50px;
+    width: 1000 px;
+    /*height: 5px; */
+    top: 30 px;
+    /*bottom: 0;*/
+    z-index: 0;
+    background: #1abc9c;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #cecece;
+    background-color: rgb(1, 31, 43);
+    padding: 40px 0;
+    height: 100vh;
+  }
+  
+  .glass-container {
+    width: 90%;
+    margin: 0 auto;
+    height: calc(100vh - 80px);
+    border-radius: 10px;
+    background: rgba(31, 60, 70, 0.6);
+  
+    backdrop-filter: blur(100px);
+  
+    position: relative;
+    z-index: 4;
+    backdrop-filter: blur(20 px);
+  }
+  
+  .bg-1, .bg-2 {
+    width: 300px;
+    height: 300px;
+    background-image: linear-gradient(
+                   112deg, 
+                 rgba(169,28,115,1) 21%,
+                rgb(241, 92, 11) 93% );
+                
+                
+    
+    position: absolute;
+    z-index: 1;
+    backdrop-filter: blur(100px);
+    background-blend-mode:luminosity;
+    opacity: 0.35;
+    
+  }
+  
+  .bg-1 {
+    top: 5%;
+    left: 5.5%;
+    border-radius: 20px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 200px;
+    border-bottom-left-radius: 50px;
+    filter: blur(20px);
+    background: linear-gradient(to top left);
+    background-blend-mode:lighten ;
+    backdrop-filter: blur(100 px);
+
+  }
+  
+  .bg-2 {
+    bottom: 5%;
+    right: 5.5%;
+    border-radius: 50%;
+    filter: blur(20px);
+    backdrop-filter: blur(100px);
+    
+  }
+  
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 20px 5%;
+  }
+  
+ 
+  .main {
+    display: flex;
+    justify-content: space-between;
+    padding: 5% 0;
+  }
+  
+  .inner-content {
+    flex-basis: 50%;
+    padding-left:  5%;
+  }
+  
+  .inner-content h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  
+  .inner-content p {
+    color: #959595;
+    margin-bottom: 40px;
+    text-align: justify;
+
+  }
+  .logo{
+    font-size: 40 px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+  
+  
+  
+  
