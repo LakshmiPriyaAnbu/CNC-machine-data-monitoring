@@ -2,12 +2,13 @@
      
     --primary-color: rgb(1, 31, 43);
       --color-white: #fff;
-      background-color: rgba(132, 157, 165, 0.6);
+      background-color: rgba(227, 240, 244, 0.6);
+      background-position-x: fixed;
     
 
   }
   
-  *,
+  
   *::before,
   *::after {
     margin: 0;

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+
+<body>
+    <div class="login-container">
+        <img src="ssn logo.png" alt="Login Image" class="login-image">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br>
+            <div>
+                <button type="submit" value="Submit" class="submit-btn" onclick="auth()">Submit</button>
+            </div>
+
+        </form>
+    </div>
+    <script>
+        function auth() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            if (email == "admin@gmail.com" && password == "admin@123") {
+                window.location.assign("index.html");
+                alert("Login Successfully");
+
+            }
+            else {
+                alert("Invalid Information");
+                return;
+            }
+        }
+    </script>
+</body>
+
+</html>

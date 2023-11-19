@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=open+sans&display=swap');
 body {
     font-family: 'open sans', sans-serif;
-    background: #2c3e50;
+    /* background: #2c3e50; 8*/
+    background-image: url(image1.jpeg);
 
     
 }
@@ -66,7 +67,8 @@ nav .animation{
     margin: 0 auto;
     height: calc(100vh - 80px);
     border-radius: 10px;
-    background: rgba(31, 60, 70, 0.6);
+     background: rgba(31, 60, 70, 0.6); 
+   /* background-image: url(image1.jpeg); */
   
     backdrop-filter: blur(100px);
   
@@ -89,7 +91,7 @@ nav .animation{
     z-index: 1;
     backdrop-filter: blur(100px);
     background-blend-mode:luminosity;
-    opacity: 0.35;
+    opacity: 0.25;
     
   }
   

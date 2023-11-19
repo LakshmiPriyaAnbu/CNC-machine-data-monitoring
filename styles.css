@@ -1,0 +1,61 @@
+/* code for the body of the page */
+body {
+    position: relative;
+    background-image: url('image1.jpeg');
+    background-color: transparent;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    /* Center the background image */
+}
+
+body::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent;
+}
+
+
+/* for page heading */
+h2 {
+    font-size: 24px;
+}
+
+/* for login container taking inputs */
+.login-container {
+    background-color: rgba(234, 234, 234, 0.9);
+    position: relative;
+    padding: 30px;
+    display: inline-block;
+    align-items: center;
+}
+
+.login-image {
+    position: top;
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* code for inputs of the login page */
+input {
+    padding: 5px;
+    margin: 5px;
+}
+
+/* code for submit button */
+.submit-btn {
+    background-color: #01799d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
