@@ -1,77 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    
-    <title>Real Time data acqusition and data monitoring od CNC machines</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-       
-            
-    </style>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
+
 <body>
-    <div class="logo">
-        <h1 style="color:white; text-align: center;">Real Time data acqusition and data monitoring of CNC machines</h1>
+    <div class="login-container">
+        <img src="ssn logo.png" alt="Login Image" class="login-image">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your username" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <br>
+            <div>
+                <button type="submit" value="Submit" class="submit-btn" onclick="auth()">Submit</button>
+            </div>
+
+        </form>
     </div>
-   
-   <br>
-   <br>
-   <div class="glass-container">
-    <div class="main">
-        <div class="inner-content"><p style="color: white;text-align: justify ;">
-            •	The breakdown of CNC machines may lead to greater downtime in the production line.
-            <br>
+    <script>
+        function auth() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            if (email == "admin@gmail.com" && password == "admin@123") {
+                window.location.assign("index_2.html");
+                alert("Login Successfully");
 
-            •	The symptoms of malfunctioning of the CNC machine are increased radiator temperature and reverberations (irregular vibrations).
-            <br>
-            
-            •	The manual observation of these irregular vibrations are highly challenging and leads to machine breakdown.
-            <br>
-            
-            •	So, it is essential to enable automated monitoring of these vibrations and radiator temperature in order to predict the failure and go for periodical maintenance.
-            
-            
-        
-        
-    </p>
-  
-        </div>
-        
-    <div>
-    <div class="bg-1"></div>
-  <div class="bg-2"></div>
-</div>
-<nav>
-    
-    <a href="second_page.html">Data Sheet</a>
-     
-    <div class="animation start-home"></div>
-    
-</nav>
-
+            }
+            else {
+                alert("Invalid Information");
+                return;
+            }
+        }
+    </script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-<!--    <form action="">
-    <br> 
-    <label for="email">E-mail ID:</label>
-     <input type="email" name="E-mail" id="email ">
-     <br>
-     <label for="password">Password:</label>
-     <input type="password" name="password" id="password">
-     <br>
-     <br>
-     <input type="button" value="Submit">
-   </form>
-   -->
