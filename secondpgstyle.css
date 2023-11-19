@@ -3,7 +3,7 @@
     --primary-color: rgb(1, 31, 43);
       --color-white: #fff;
       background-color: rgba(227, 240, 244, 0.6);
-      background-position-x: fixed;
+      background-attachment: fixed;
     
 
   }
